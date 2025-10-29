@@ -23,7 +23,7 @@ class Count_Sort
         freq[i]+=freq[i-1];
 
         //find index of each ellent
-        for(int i=len-1;i>=0;i++)
+        for(int i=len-1;i>=0;i--)
         {
             int indx=freq[arr[i]]-1;
             out[indx]=arr[i];
@@ -78,4 +78,5 @@ class Count_Sort
         }
         System.out.println();
     }
+
 }
