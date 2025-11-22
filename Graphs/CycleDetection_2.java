@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class CycleDetection_1//Directed graph
+class CycleDetection_2//Directed graph
 {    
     static class Edge
     {
