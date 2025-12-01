@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.PriorityQueue;
 //Implimented in wieghted graph
 class Dijkstra_Algo //Shortest distance from source to all vertices using priority queue
 {
@@ -53,11 +54,11 @@ class Dijkstra_Algo //Shortest distance from source to all vertices using priori
             if (currDist>dist[u]) 
                 continue;
 
-            for (Edge edge:graph[u]) 
+            for(int i=0;i<graph[u].size();i++)
             {
+                Edge edge=graph[u].get(i);
                 int v=edge.dest;
                 int w=edge.weight;
-
                 if (dist[u]+w<dist[v])
                 {
                     dist[v]=dist[u]+w;
